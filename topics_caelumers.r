@@ -9,3 +9,6 @@ summary(topics$caelumers)
 
 print("Correlacao entre solucionados e se 1 caelumer respondeu")
 cor(topics$solved, topics$hasCaelumer)
+
+
+binom.test(sum(topics$solved), sum(topics$hasCaelumer), 1/2, alternative="greater") 
